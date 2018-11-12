@@ -7,11 +7,18 @@ Group](https://github.com/rust-cuda/wg/issues/1).
 
 ## Organization
 
-Team: TBD
+**Team:**
 
-Contact: TBD (Zulip / Discord / ???)
+* @bheisler
+* @denzp
+* @gnzlbg
+* @termoshtt
+* @vadixidav
 
-* https://rust-lang.zulipchat.com/
+**Contact:**
+
+* Chat: https://rust-cuda.zulipchat.com
+* Github: https://github.com/rust-cuda/wg
 
 ## License
 
