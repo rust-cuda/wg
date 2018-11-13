@@ -14,6 +14,7 @@ Group](https://github.com/rust-cuda/wg/issues/1).
 * @gnzlbg
 * @termoshtt
 * @vadixidav
+* @Dylan-DPC
 
 **Contact:**
 
