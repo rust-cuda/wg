@@ -1,6 +1,6 @@
-# Rust CUDA Working Group
+# Rust CUDA Team
 
-> Coordination repository of the Rust CUDA Working Group (WG)
+> Coordination repository of the Rust CUDA Team
 
 See [Issue 1: Try to bootstrap a Rust CUDA Working
 Group](https://github.com/rust-cuda/wg/issues/1).
@@ -17,10 +17,16 @@ Group](https://github.com/rust-cuda/wg/issues/1).
 * @Dylan-DPC
 * @DiamondLovesYou
 
+(if you'd like to join the team, send a PR adding yourself to the list)
+
 **Contact:**
 
 * Chat: https://rust-cuda.zulipchat.com
 * Github: https://github.com/rust-cuda/wg
+
+## Roadmap
+
+[Roadmap](documents/roadmap.md).
 
 ## License
 
@@ -37,7 +43,6 @@ at your option.
 ## Contributing
 
 We welcome all people who want to contribute.
-Please see the [contributing instructions] for more information.
 
 Contributions in any form (issues, pull requests, etc.) to this project
 must adhere to Rust's [Code of Conduct].
