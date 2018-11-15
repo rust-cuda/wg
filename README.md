@@ -2,9 +2,6 @@
 
 > Coordination repository of the Rust CUDA Team
 
-See [Issue 1: Try to bootstrap a Rust CUDA Working
-Group](https://github.com/rust-cuda/wg/issues/1).
-
 ## Organization
 
 **Team:**
@@ -27,6 +24,8 @@ Group](https://github.com/rust-cuda/wg/issues/1).
 ## Roadmap
 
 [Roadmap](documents/roadmap.md).
+
+**Active discussion issues**: TBD.
 
 ## License
 
