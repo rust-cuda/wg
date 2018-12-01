@@ -13,6 +13,7 @@
 * @vadixidav
 * @Dylan-DPC
 * @DiamondLovesYou
+* @peterhj
 
 (if you'd like to join the team, send a PR adding yourself to the list)
 
