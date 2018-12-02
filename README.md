@@ -14,6 +14,7 @@
 * @Dylan-DPC
 * @DiamondLovesYou
 * @peterhj
+* @AndrewGaspar
 
 (if you'd like to join the team, send a PR adding yourself to the list)
 
