@@ -2,17 +2,28 @@
 
 ## What value do you want to bring to the project?
 
-The Working Group is an attempt to combine efforts to bring reliable support of writing safe GPGPU CUDA code with Rust.
+The Working Group's goal is to deliver first-class CUDA support to Rust users - see our [Roadmap].
+
+[Roadmap]: https://github.com/rust-cuda/wg/blob/master/documents/roadmap.md
 The work that will be done is supposed to clear the path for other GPGPU platforms in future.
 
 ## Why should it be put into place?
 
-First steps to basic support of the feature have already been made by individual developers.
+The WG is already in place as an unofficial WG, see our [Github], [Roadmap], [Zulip], and some PRs by WG members: [rust@denzp], [rust@peterhj],  [stdsimd], [libc], etc. 
+
+Being an official WG would allow us to use the official communication channels like the rust-lang zulip, which would give us more visibility and allow us to attract more contributors.
+
+[Github]: https://github.com/rust-cuda
+[Zulip]: https://rust-cuda.zulipchat.com/
+[libc]: https://github.com/rust-lang/libc/pull/1126
+[stdsimd]: https://github.com/rust-lang-nursery/stdsimd/pulls?q=is%3Apr+nvptx+is%3Aclosed
+[rust@denzp]: https://github.com/rust-lang/rust/pulls?utf8=%E2%9C%93&q=is%3Apr+is%3Aclosed+author%3Adenzp
+[rust@peterhj]: https://github.com/rust-lang/rust/pulls?utf8=%E2%9C%93&q=is%3Apr+is%3Aclosed+author%3Apeterhj
 Regardless of recent progress, there are still a lot of questions about safety and soundness of SIMT (Single Instruction, Multiple Threads) code and they require a lot of collaboration to find solutions.
 
 ## What is the working group about?
 
-We want to work together on getting a solid foundation for writing CUDA code.
+Right now, this WG is about making the already-existing Rust CUDA support minimally reliable. 
 Getting a safe and production-ready development experience on Stable Rust is our primary goal!
 
 Also, currently a major obstacle for developing GPGPU applications and algorithms in Rust is a lack of learning resources.
@@ -22,11 +33,11 @@ We plan to solve the "documentation debt" with a broad range of tutorials, examp
 
 The WG is not focused on promoting or developing "standard" frameworks.
 Instead, we want to provide basic and reliable support of the feature and inspire the community to start using it.
-This should lead to experimenting with different approaches on how to use it and creating awesome tooling.
+This WG is only about CUDA support - other GPGPU targets are out-of-scope. Our focus is on making the current CUDA target more reliable. Everything that goes beyond that (e.g. higher-level CUDA libraries, CUDA frameworks, etc.) is also out-of-scope.
 
 ## Is your WG long-running or temporary?
 
-In our current vision, the WG should live until we fulfill our goals.
+The CUDA WG is long-running. We have a [Roadmap] for an MVP, but there are many issues worth solving once that MVP is achieved (e.g. foundational libraries). 
 
 In the end, we hope the WG will evolve into another one to cover similar topics:
 to support other GPGPU platforms or to create higher-level frameworks to improve end-to-end experience based on community feedback.
@@ -80,7 +91,7 @@ Excessive learning materials and retrospective about made decisions should help 
 
 ## Everything that is already decided upon
 
-We already have a [`rust-cuda`](https://github.com/rust-cuda) Github organization and a [`rust-cuda`](https://rust-cuda.zulipchat.com) Zulip server.
+We work in the open, see our [Github].
 
 > TBD... would it make sense to move to a `rust-lang` Zulip server?
 
@@ -90,4 +101,4 @@ We already have a [`rust-cuda`](https://github.com/rust-cuda) Github organizatio
 
 ## Preferred way of contact/discussion
 
-> TBD...
+[Github] issues or [Zulip].
