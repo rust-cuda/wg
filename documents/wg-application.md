@@ -6,8 +6,6 @@ The Working Group's goal is to deliver first-class CUDA support to Rust users - 
 
 [Roadmap]: https://github.com/rust-cuda/wg/blob/master/documents/roadmap.md
 
-The work that will be done is supposed to clear the path for other GPGPU platforms in future.
-
 ## Why should it be put into place?
 
 The WG is already in place as an unofficial WG, see our [Github], [Roadmap], [Zulip], and some PRs by WG members: [rust@denzp], [rust@peterhj], [stdsimd], [libc], etc.
@@ -33,7 +31,10 @@ We plan to solve the "documentation debt" with a broad range of tutorials, examp
 
 The WG is not focused on promoting or developing "standard" frameworks.
 Instead, we want to provide basic and reliable support of the feature and inspire the community to start using it.
-This WG is only about CUDA support - other GPGPU targets are out-of-scope. Our focus is on making the current CUDA target more reliable. Everything that goes beyond that (e.g. higher-level CUDA libraries, CUDA frameworks, etc.) is also out-of-scope.
+
+This WG is only about CUDA support - other GPGPU targets are out-of-scope.
+Our focus is on making the current CUDA target more reliable.
+Everything that goes beyond that (e.g. higher-level CUDA libraries, CUDA frameworks, etc.) is also out-of-scope.
 
 ## Is your WG long-running or temporary?
 
@@ -45,39 +46,33 @@ to support other GPGPU platforms or to create higher-level frameworks to improve
 ## What is your long-term vision?
 
 Having a reliable and safe CUDA development experience is our ultimate goal.
-This should include:
-
-* Getting `nvptx64-nvidia-cuda` to a [Tier 2](https://forge.rust-lang.org/platform-support.html) support state.
-* Test infrastructure on a real hardware and running the tests during Rust CI process.
-* Rich documentation, references, tutorials and examples.
-* A broad set of new compile errors, warnings and lints for SIMT execution model to avoid pitfalls and ensure code soundness.
+To get there, first of all, we will need to achieve all milestones in our [Roadmap].
 
 ## How do you expect the relationship to the project be?
 
-The WG will be responsible for CUDA related issues and user requests.
-This includes [already reported issues](https://github.com/rust-lang/rust/issues?q=is%3Aopen+is%3Aissue+label%3AO-NVPTX) and those that will be opened due to the work made by the WG.
-An important aspect is that the WG will take care of the state of the `rust-ptx-linker` and will do its best to avoid blocking someone else's work (like it, unfortunately, happened in [rust#59752](https://github.com/rust-lang/rust/pull/59752)).
+The Working Group is mainly going to create various RFCs and send PRs to Rust components.
+
+An important aspect of the WG is active participation in discussions related to the NVPTX target and involved tools.
+This also includes [already reported issues](https://github.com/rust-lang/rust/issues?q=is%3Aopen+is%3Aissue+label%3AO-NVPTX) and those that will be opened due to the work made by the WG.
 
 ### How do you want to establish accountability?
 
-For that purpose, we will publish an agenda and made decisions from our meetings.
-Once we achieve important milestones we plan to make public announces.
+Currently, as an unofficial WG, we work completely in the open and we intend to go on in the same way.
+Most of discussions happen either in out github issues, or in our public [Zulip], so that they be read by anyone.
+
+Once we will start having regular meetings, we would publish agenda and summary.
 
 ## Which other WGs do you expect to have close contact with?
 
-We would like to cooperate with *Language Team* in discussions about safety in SIMT code.
+We would like to cooperate with *Language Team* (or perhaps, additionally with *Unsafe Code Guidelines WG*) in discussions about safety in SIMT code.
 Additionally, it would be very important to discuss with *Infra team* a strategy of reliable deployment of `rust-ptx-linker` (likely as a `rustup` component).
 
-On the other hand, proposed [Machine Learning WG](https://internals.rust-lang.org/t/enabling-the-formation-of-new-working-groups/10218/11) could leverage CUDA accelerated computing capabilities, so we can discuss their use cases.
+On the other hand, proposed [Machine Learning WG](https://internals.rust-lang.org/t/enabling-the-formation-of-new-working-groups/10218/11) could leverage CUDA accelerated computing capabilities, so we can collaborate on their use cases.
 
 ## What are your short-term goals?
 
-Mainly, short-term goals are about evaluating and discussing how can we achieve long-term goals:
-
-* Make a poll about community experiences and use cases for CUDA.
-* Deploy the `rust-ptx-linker` as a `rustup` component.
-* Collect soundness and safety issues that can happen in SIMT execution model.
-* Decide testing approach on a real hardware.
+Mainly, short-term goals are defined in our [Roadmap] for an MVP.
+Additionally, we plan to make a poll about use cases, expectations, and community awareness that it is already possible to experiment with CUDA on Nightly Rust today.
 
 ## Who is the initial leadership?
 
@@ -85,15 +80,11 @@ Mainly, short-term goals are about evaluating and discussing how can we achieve 
 
 ## How do you intend to make your work accessible to outsiders?
 
-Excessive learning materials and retrospective about made decisions should help to get more people involved in either discussions or further experimenting.
-
-> TBD... something else?
+Blog posts, announcements and retrospective about made decisions should help to get more people involved in either discussions or further experimenting.
 
 ## Everything that is already decided upon
 
 We work in the open, see our [Github].
-
-> TBD... would it make sense to move to a `rust-lang` Zulip server?
 
 ## Preferred way of contact/discussion
 
